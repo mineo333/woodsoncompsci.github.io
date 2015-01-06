@@ -5,6 +5,36 @@ function makeCitation(){
 	city = document.getElementById('city').value
 	publisher = document.getElementById('publisher').value
 	year = document.getElementById('year').value
-	document.getElementById("citation").innerHTML = "<p>" + authorlastname + ", " + authorfirstname + ". <i>" + title + 
-													"</i>. " + city + ": " + publisher + ", " + year + ". Print." + "</p>";
+
+    var cit = "<p>";
+
+    if(authorlastname){
+        cit += authorlastname;
+    }
+
+    if (authorfirstname) {
+        cit = cit + ", " + authorfirstname;
+    }
+
+    if (title) {
+        cit = cit + ". <i>" + title + "</i>. ";
+    }
+
+    if(city) {
+        cit = cit + city;
+    }
+
+    if(publisher){
+        cit = cit + ": " + publisher;
+    }
+
+    if(year){
+        cit = cit + ", " + year;
+    }
+
+    cit += ".</p>";
+
+    document.getElementById("citation").innerHTML = cit;
+	//document.getElementById("citation").innerHTML = "<p>" + authorlastname + ", " + authorfirstname + ". <i>" + title +
+	//												"</i>. " + city + ": " + publisher + ", " + year + ". Print." + "</p>";
 }
