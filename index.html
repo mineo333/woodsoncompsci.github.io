@@ -1,1 +1,30 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Citation Maker</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Woodson Style Guide Citation Machine</h1>
+		<h4>Author's First Name</h4>
+		<input id="authorfirstname"></input>
+		<h4>Author's Last Name</h4>
+		<input id="authorlastname"></input>
+		<h4>Book Title</h4>
+		<input id="title"></input>
+		<h4>Publication City</h4>
+		<input id="city"></input>
+		<h4>Publisher</h4>
+		<input id="publisher"></input>
+		<h4>Year Published</h4>
+		<input id="year"></input>
+		<div id="submit">
+			<button type="submit" onclick="makeCitation()">Make Citation</button>
+		</div>
+		<div id="citation">
+			<p>this should be the final citation</p>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,9 @@
+body{
+	width: 960px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+#submit {
+	margin-top: 25px;
+}
