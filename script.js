@@ -38,3 +38,8 @@ function makeCitation(){
 	//document.getElementById("citation").innerHTML = "<p>" + authorlastname + ", " + authorfirstname + ". <i>" + title +
 	//												"</i>. " + city + ": " + publisher + ", " + year + ". Print." + "</p>";
 }
+
+function copy(){
+    text = "hi"
+    text.execCommand("Copy");
+}

@@ -7,24 +7,54 @@
 	</head>
 	<body>
 		<h1>Woodson Style Guide Citation Machine</h1>
-		<h4>Author's First Name</h4>
-		<input id="authorfirstname"></input>
-		<h4>Author's Last Name</h4>
-		<input id="authorlastname"></input>
-		<h4>Book Title</h4>
-		<input id="title"></input>
-		<h4>Publication City</h4>
-		<input id="city"></input>
-		<h4>Publisher</h4>
-		<input id="publisher"></input>
-		<h4>Year Published</h4>
-		<input id="year"></input>
+        <ul>
+            <a href=""><li>Book</li></a>
+            <a href=""><li>Article</li></a>
+            <a href=""><li>Internet</li></a>
+        </ul>
+
+        <div id="input">
+
+        <div id="field">
+		    <h4>Book Title</h4>
+		    <input id="title"></input>
+        </div>
+
+        <div id="field">
+		    <h4>Author's First Name</h4>
+		    <input id="authorfirstname"></input>
+        </div>
+
+        <div id="field">
+		    <h4>Author's Last Name</h4>
+		    <input id="authorlastname"></input>
+        </div>
+
+
+        <div id="field">
+		    <h4>Publication City</h4>
+		    <input id="city"></input>
+        </div>
+
+        <div id="field">
+		    <h4>Publisher</h4>
+		    <input id="publisher"></input>
+        </div>
+
+        <div id="field">
+		    <h4>Year Published</h4>
+		    <input id="year"></input>
+        </div>
+
 		<div id="submit">
 			<button type="submit" onclick="makeCitation()">Make Citation</button>
 		</div>
+        </div>
 		<div id="citation">
 			<p>this should be the final citation</p>
 		</div>
+        <!--<h5 onclick="copy()">Click here to copy</h5>-->
+
 	</body>
 </html>
 
