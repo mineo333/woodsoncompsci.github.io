@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Citation Maker</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Woodson Style Guide Citation Machine</h1>
+        <ul>
+            <a href="./index.html"><li>Book</li></a>
+            <a href=""><li>Article</li></a>
+            <a href=""><li>Internet</li></a>
+        </ul>
+
+		<div id="input">
+			<div id="field">
+				<h4>Article Title</h4>
+				<input id="title"></input>
+			</div>
+
+			<div id="field">
+				<h4>Author's First Name</h4>
+				<input id="authorfirstname"></input>
+			</div>
+
+			<div id="field">
+				<h4>Author's Last Name</h4>
+				<input id="authorlastname"></input>
+			</div>
+
+			<div id="field">
+				<h4>Journal Title</h4>
+				<input id="journal"></input>
+			</div>
+
+			<div id="field">
+				<h4>Volume</h4>
+				<input id="volume"></input>
+			</div>
+
+			<div id="field">
+				<h4>Issue Number</h4>
+				<input id="issue"></input>
+			</div>
+
+			<div id="field">
+				<h4>Pages</h4>
+				<input id="pages"></input>
+			</div>
+
+			<div id="field">
+				<h4>Publication Date</h4>
+				<input id="year"></input>
+			</div>
+        </div>
+
+		<div id="submit">
+			<button type="submit" onclick="articleCitation()">Make Citation</button>
+		</div>
+		<div id="citation">
+			<p>this should be the final citation</p>
+		</div>
+
+        <script src="script.js"></script>
+	</body>
+</html>

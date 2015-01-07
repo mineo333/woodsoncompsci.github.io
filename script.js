@@ -1,4 +1,6 @@
-function makeCitation(){
+input = document.getElementById("input");
+
+function bookCitation(){
 	authorfirstname = document.getElementById('authorfirstname').value
 	authorlastname = document.getElementById('authorlastname').value
 	title = document.getElementById('title').value
@@ -39,7 +41,53 @@ function makeCitation(){
 	//												"</i>. " + city + ": " + publisher + ", " + year + ". Print." + "</p>";
 }
 
-function copy(){
-    text = "hi"
-    text.execCommand("Copy");
+function articleCitation(){
+	authorfirstname = document.getElementById('authorfirstname').value;
+	authorlastname = document.getElementById('authorlastname').value;
+	title = document.getElementById('title').value;
+	volume = document.getElementById('volume').value;
+	issue = document.getElementById('issue').value;
+	pages = document.getElementById('pages').value;
+	journal = document.getElementById('journal').value;
+	year = document.getElementById('year').value;
+
+	var cit = "<p>";
+
+	if(authorlastname){
+		cit += authorlastname;
+	}
+
+	if (authorfirstname) {
+		cit = cit + ", " + authorfirstname + ". ";
+	}
+
+	if (title) {
+		cit = cit + ' "' + title + '." ';
+	}
+
+	if(journal) {
+		cit = cit + "<i>" + journal + "</i> ";
+	}
+
+	if (volume) {
+		cit = cit + volume;
+	}
+
+	if (issue) {
+		cit = cit + "." + issue;
+	}
+
+	if(year){
+		cit = cit + " (" + year + ")";
+	}
+
+	if(pages){
+		cit = cit + ": " + pages;
+	}
+
+	cit += ". Print.</p>";
+
+	document.getElementById("citation").innerHTML = cit;
+	//document.getElementById("citation").innerHTML = "<p>" + authorlastname + ", " + authorfirstname + ". <i>" + title +
+	//												"</i>. " + city + ": " + publisher + ", " + year + ". Print." + "</p>";
 }
